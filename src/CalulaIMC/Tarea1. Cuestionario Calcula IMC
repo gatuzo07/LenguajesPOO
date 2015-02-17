@@ -1,0 +1,21 @@
+# Ejercicio1. CalculaIMC
+
+Ejercicio 1
+
+1. ¿En el metodo main estamos usando los atributos de las class Imc?
+  R= No
+
+2. ¿Que modificarias en la clase Imc para que en el metodo calcular ocupemos los atributos?
+  R= Eliminaria los argumentos del metodo IMC
+
+3. En la clase main tal como esta trata de imprimir el valor de los atributos y verificar su valor.
+  R= Agregaria en la clase IMC la impresión de los valores peso y estatura, para que cuando se imprima
+     el metodo calcular tambien se impriman estos valores
+
+4. Poner atributos negativos es imposible en este problema. ¿Como le harias para impedir que en el main
+   el peso y la estatura sean negativos?
+   NO AGREGAR NINGUNA ESTRUCTURA DE CONTROL (IF)
+   R= Agregaria unas variables de control, las cuales incialmente tomaran el valor dado, y luego solicitat
+      a las variables peso altura tomar el valor de esas variables, como toma el valor no importaria si estos
+      son negativos.
+      Se realizaria un encapsulamiento, en este caso pondriamos una validacion usando los metodos get y set
