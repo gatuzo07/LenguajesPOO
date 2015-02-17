@@ -19,3 +19,4 @@ Ejercicio 1
       a las variables peso altura tomar el valor de esas variables, como toma el valor no importaria si estos
       son negativos.
       Se realizaria un encapsulamiento, en este caso pondriamos una validacion usando los metodos get y set
+ 
