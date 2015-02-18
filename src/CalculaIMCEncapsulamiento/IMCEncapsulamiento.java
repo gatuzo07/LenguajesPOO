@@ -29,5 +29,6 @@ public class IMCEncapsulamiento {
     
     public float calcular(){        
         return peso/(estatura*estatura); 
+        
     }
 }
