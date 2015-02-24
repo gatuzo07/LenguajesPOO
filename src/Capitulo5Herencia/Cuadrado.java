@@ -4,7 +4,7 @@ package Capitulo5Herencia;
  *
  * @author gatuzo07
  */
-public class Cuadrado {
+public class Cuadrado implements Superficies {
     
     private float lado;
   
@@ -36,5 +36,10 @@ public class Cuadrado {
     public void setLado(float lado) throws NumeroNoNegativoException {
         ValidarValorNoNegativo.validar(lado);
         this.lado=lado;
+    }
+
+    @Override
+    public float caculararea() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 }

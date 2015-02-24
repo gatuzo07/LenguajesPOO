@@ -4,7 +4,7 @@ package Capitulo5Herencia;
  *
  * @author gatuzo07
  */
-public class Triangulo {
+public class Triangulo implements Superficies {
     private float base;
     private float altura;
 
@@ -34,5 +34,10 @@ public class Triangulo {
 
     public void setAltura(float altura) {
         this.altura = altura;
+    }
+
+    @Override
+    public float caculararea() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 }

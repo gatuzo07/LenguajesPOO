@@ -4,7 +4,7 @@ package Capitulo5Herencia;
  *
  * @author gatuzo07
  */
-public class Rectangulo {
+public class Rectangulo implements Superficies{
     float ladoMenor;
     float ladoMayor;
 
@@ -34,6 +34,11 @@ public class Rectangulo {
 
     public void setLadoMayor(float ladoMayor) {
         this.ladoMayor = ladoMayor;
+    }
+
+    @Override
+    public float caculararea() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
             
 }
