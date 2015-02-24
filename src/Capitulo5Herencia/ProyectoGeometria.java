@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Capitulo5.Herencia;
+package Capitulo5Herencia;
 
 /**
  *

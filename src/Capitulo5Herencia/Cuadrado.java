@@ -1,4 +1,4 @@
-package Capitulo5.Herencia;
+package Capitulo5Herencia;
 
 /**
  *
