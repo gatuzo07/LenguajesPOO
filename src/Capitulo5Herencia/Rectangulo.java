@@ -17,6 +17,7 @@ public class Rectangulo implements Superficies{
     }
     
     public float calculararea(){
+        System.out.println("El area del Rectangulo es");
         return ladoMayor*ladoMenor;
     }
 
