@@ -13,6 +13,11 @@ public class Animal {
         return nombre;
     }
 
+    public Animal(String nombre, int edad) {
+        this.nombre = nombre;
+        this.edad = edad;
+    }
+
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
