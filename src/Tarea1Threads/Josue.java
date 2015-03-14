@@ -5,14 +5,13 @@ package Tarea1Threads;
  * @author gatuzo07
  */
 public class Josue implements Runnable {
-    
+
     @Override
     public void run() {
-         while(true){
-            try{
-            System.out.println("Josue");
+        try {
             Thread.sleep(3000);
-            }catch(Exception e){ }
-         }
+            System.out.println("Josue");
+        } catch (InterruptedException e) {
+        }
     }
 }
