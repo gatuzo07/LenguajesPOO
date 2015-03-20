@@ -1,9 +1,6 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package Tarea2ThreadsReloj;
+
+import java.util.Calendar;
 
 /**
  *
@@ -16,6 +13,25 @@ public class ThreadsReloj extends javax.swing.JFrame {
      */
     public ThreadsReloj() {
         initComponents();
+        Thread t1 = new Thread(new Runnable() {
+
+            public void run() {
+                while(true){
+                    try{
+                        Calendar cal = Calendar.getInstance();
+                        int hora = cal.get(Calendar.HOUR_OF_DAY);
+                        int minuto = cal.get(Calendar.MINUTE);
+                        int segundo = cal.get(Calendar.SECOND);
+                        jLabel1.setText(hora+":"+minuto+":"+segundo);
+                    Thread.sleep(1000);
+                    }catch(Exception e){
+                        
+                    }
+                }
+            }
+        }
+        );
+        t1.start();
     }
 
     /**
@@ -27,17 +43,28 @@ public class ThreadsReloj extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jLabel1 = new javax.swing.JLabel();
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        jLabel1.setFont(new java.awt.Font("Lucida Grande", 1, 48)); // NOI18N
+        jLabel1.setText("Hora");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(26, 26, 26)
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 332, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(42, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(89, 89, 89)
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(138, Short.MAX_VALUE))
         );
 
         pack();
@@ -79,5 +106,6 @@ public class ThreadsReloj extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel jLabel1;
     // End of variables declaration//GEN-END:variables
 }
