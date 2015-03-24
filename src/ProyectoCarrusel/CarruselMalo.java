@@ -19,13 +19,14 @@ public class CarruselMalo extends javax.swing.JFrame {
             public void run() {
                 while(true){
                     try{
-                        if(indice > ModeloGaleria.generarGaleria().size()) indice = 0;
+                        if(indice >= ModeloGaleria.generarGaleria().size()) indice = 0;
                         jLabel1.setText(ModeloGaleria.generarGaleria().get(indice).getTitulo());
                         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource(ModeloGaleria.generarGaleria().get(indice).getURL())));
                         jLabel3.setText(ModeloGaleria.generarGaleria().get(indice).getDescripcion());
-                        
+                
                         indice++;
-                        Thread.sleep(3000);
+                        Thread.sleep(1000);
+                        
                     }catch(Exception e){ }
                 }
             }
