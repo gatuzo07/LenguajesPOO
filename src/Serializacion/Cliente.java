@@ -5,7 +5,13 @@ import java.io.Serializable;
 /**
  *
  * @author gatuzo07
+ * 
  * Paso1. A las clases a serializar implementarles la interface Serializable
+ * 
+ * Paso2. Crear la clase compresora (guarda) y descompresora (lee) para las 
+ *        clases del paso 1
+ * 
+ * 
  */
 public class Cliente implements Serializable {
     private String nombre;
