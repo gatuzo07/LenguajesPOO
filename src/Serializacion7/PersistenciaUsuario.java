@@ -9,7 +9,7 @@ public class PersistenciaUsuario {
     public void guardar(Usuario u)throws Exception{
         
         //Paso 1
-        File file = new File ("/Users/gatuzo07/archivaldo.yo");
+        File file = new File ("/Users/gatuzo07/archivaldo.txt");
         
         //Paso 2
         FileOutputStream fos = new FileOutputStream(file);
