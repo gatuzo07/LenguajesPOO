@@ -6,7 +6,7 @@ import java.io.*;
  */
 public class PersistenciaUsuario {
     
-    public void guardar()throws Exception{
+    public void guardar(Usuario u)throws Exception{
         
         //Paso 1
         File file = new File ("/Users/gatuzo07/archivaldo.yo");
@@ -20,5 +20,18 @@ public class PersistenciaUsuario {
         oos.writeObject(u);
         oos.close();
         
+    }
+    public Usuario leer()throws Exception{
+        
+        //Paso 1
+        File file = new File ("/Users/gatuzo07/archivaldo.yo");
+        
+        //Paso 2
+        FileInputStream fis = new FileInputStream(file);
+        ObjectInputStream ois = new ObjectInputStream(fis);
+        Usuario u = new Usuario();
+        u = (Usuario)ois.readObject();
+        
+        return u;
     }
 }
