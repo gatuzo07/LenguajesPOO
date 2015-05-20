@@ -13,6 +13,7 @@ public class PersistenciaUsuario {
     }
     
     public static Cliente leer(String nombre) throws Exception {
+        return null;
         //Aqui tambien codigo loco y hermoso
     }
 }
